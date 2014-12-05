@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 1c989e58c04928a4bbbbbfb324208293
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Antebraco_L
+    100002: Antebraco_L_001_R
+    100004: antepata_L
+    100006: antepata_L_001_R
+    100008: Arma__o
+    100010: B_zier_-_Curva
+    100012: braco_L
+    100014: braco_L_001_R
+    100016: Cabeca
+    100018: coxa_L
+    100020: coxa_L_001_R
+    100022: Cube
+    100024: dorsal_L
+    100026: dorsal_L_001_R
+    100028: Mao_L
+    100030: Mao_L_001_R
+    100032: orelha_L
+    100034: orelha_L_001_R
+    100036: Pata_L
+    100038: Pata_L_001_R
+    100040: Pelvis_L
+    100042: Pelvis_L_001_R
+    100044: pescoco
+    100046: rabo
+    100048: //RootNode
+    100050: SPlinerabo
+    100052: torax
+    100054: traseiro
+    100056: tronco
+    100058: Vazio
+    400000: Antebraco_L
+    400002: Antebraco_L_001_R
+    400004: antepata_L
+    400006: antepata_L_001_R
+    400008: Arma__o
+    400010: B_zier_-_Curva
+    400012: braco_L
+    400014: braco_L_001_R
+    400016: Cabeca
+    400018: coxa_L
+    400020: coxa_L_001_R
+    400022: Cube
+    400024: dorsal_L
+    400026: dorsal_L_001_R
+    400028: Mao_L
+    400030: Mao_L_001_R
+    400032: orelha_L
+    400034: orelha_L_001_R
+    400036: Pata_L
+    400038: Pata_L_001_R
+    400040: Pelvis_L
+    400042: Pelvis_L_001_R
+    400044: pescoco
+    400046: rabo
+    400048: //RootNode
+    400050: SPlinerabo
+    400052: torax
+    400054: traseiro
+    400056: tronco
+    400058: Vazio
+    2300000: B_zier_-_Curva
+    3300000: B_zier_-_Curva
+    4300000: B_zier_-_Curva
+    4300002: Cube
+    7400000: Default Take
+    7400002: Arma__oAction
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
