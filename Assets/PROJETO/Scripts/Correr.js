@@ -5,6 +5,8 @@ var animacao : int;
 var velocidadeAcel: float;
 var animat: Animator; 
  
+ // comentario de teste do commit
+ 
 function Start () 
 {
 	
