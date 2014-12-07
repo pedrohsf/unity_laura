@@ -21,7 +21,7 @@ function Update ()
 
 	velocidade = 100*Time.deltaTime;
 	velocidadeRotacao = 100 * Time.deltaTime;
-}
+
 	
   if(Input.GetKey("r")){
   	if(!animat.GetBool("com_objeto")){ 
@@ -30,7 +30,7 @@ function Update ()
 	  	animacao = 1;
 	} 
   }else{
-animat.SetBool("correndo",false); 
+	animat.SetBool("correndo",false); 
   }
 	
   if(Input.GetKey("w"))
@@ -78,7 +78,7 @@ animat.SetBool("correndo",false);
    
    
    
-   
+   }
    
    
    
