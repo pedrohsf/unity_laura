@@ -51,7 +51,10 @@
      <Compile Include="Assets\PROJETO\Scripts\Life.js" />
      <Compile Include="Assets\PROJETO\Scripts\Menu principal.js" />
      <Compile Include="Assets\PROJETO\Scripts\casa_porta.js" />
+     <Compile Include="Assets\PROJETO\Scripts\fimFase2.js" />
+     <Compile Include="Assets\PROJETO\Scripts\geral.js" />
      <Compile Include="Assets\PROJETO\Scripts\gravidade_forcada.js" />
+     <Compile Include="Assets\PROJETO\Scripts\menu.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
