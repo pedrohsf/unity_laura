@@ -30,8 +30,11 @@ function Update () {
 			if(interagirComOMouseEmObjetos()){
 				 
 			}
-		}else{
+		}else{  
+			objetoQueEstaSendoSegurado.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionY;
+			objetoQueEstaSendoSegurado.rigidbody.drag = 30;
 			objetoQueEstaSendoSegurado.transform.parent = null;
+			objetoQueEstaSendoSegurado.enabled  = true;
 			objetoQueEstaSendoSegurado = null;
 			estaSegurandoUmObjeto = false;
 			animat.SetBool("com_objeto",false); 
@@ -51,10 +54,12 @@ function interagirComOMouseEmObjetos(){
 				objetoQueEstaSendoSegurado = colisor.collider;
 				objetoQueEstaSendoSegurado.transform.parent = transform;
 				estaSegurandoUmObjeto = true;
-				animat.SetBool("com_objeto",true);
-				objetoQueEstaSendoSegurado.transform.position.x = transform.position.x;
-				objetoQueEstaSendoSegurado.transform.position.y = transform.position.y+15;
-				objetoQueEstaSendoSegurado.transform.position.z = transform.position.z+7; 
+				animat.SetBool("com_objeto",true); 
+				objetoQueEstaSendoSegurado.transform.position.y = GameObject.Find("mao_do_boneco").transform.position.y;
+				objetoQueEstaSendoSegurado.transform.position.x = GameObject.Find("mao_do_boneco").transform.position.x;
+				objetoQueEstaSendoSegurado.transform.position.z = GameObject.Find("mao_do_boneco").transform.position.z;
+				objetoQueEstaSendoSegurado.enabled = false;
+				objetoQueEstaSendoSegurado.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 				return true;
 			} 
 		}else if(colisor.collider.tag == "uma_porta"){
