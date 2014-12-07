@@ -1,14 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PROJETO\Scripts\mensagem.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PROJETO\Scripts\casa_porta.js">
     <Files>
-      <File FileName="Assets\PROJETO\Scripts\casa_porta.js" Line="1" Column="1" />
+      <File FileName="Assets\PROJETO\Scripts\casa_porta.js" Line="37" Column="40" />
       <File FileName="Assets\PROJETO\Scripts\geral.js" Line="1" Column="1" />
       <File FileName="Assets\PROJETO\Scripts\Correr.js" Line="1" Column="1" />
       <File FileName="Assets\PROJETO\Scripts\fimFase2.js" Line="1" Column="1" />
       <File FileName="Assets\PROJETO\Scripts\Menu principal.js" Line="1" Column="1" />
       <File FileName="Assets\PROJETO\Scripts\menu.js" Line="1" Column="1" />
       <File FileName="Assets\PROJETO\Scripts\mensagem.js" Line="24" Column="43" />
+      <File FileName="Assets\PROJETO\Scripts\mensageMesa.js" Line="24" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
