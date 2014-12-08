@@ -5,12 +5,22 @@ var casa_interacao : Animator;
  
 /* vars do script de interaçao com o mouse */
 var cameraMira : Camera;
-var estaSegurandoUmObjeto : boolean;
-var objetoQueEstaSendoSegurado : Collider;
+static var estaSegurandoUmObjeto : boolean;
+static var objetoQueEstaSendoSegurado : Collider;
+/* vars de posiçao inicial dos objetos pegos */
+static var posInicial : Vector3;
+static var rotInicial : Vector3;
 
 /* vars animate para o pegando objeto */
-var animat : Animator;
+static var animat : Animator;
 var animacao : int;
+
+function setObjectPosInicial(){
+	posInicial = objetoQueEstaSendoSegurado.transform.position;
+	rotInicial = objetoQueEstaSendoSegurado.transform.rotation.eulerAngles;
+} 
+
+
 
 function Start () {
 	casa_interacao.SetBool("porta_fechada",false);
@@ -31,13 +41,22 @@ function Update () {
 				 
 			}
 		}else{  
-			objetoQueEstaSendoSegurado.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionY;
-			objetoQueEstaSendoSegurado.rigidbody.drag = 30;
+			
+			objetoQueEstaSendoSegurado.collider.enabled = true;
+			
+			objetoQueEstaSendoSegurado.collider.enabled = true;
 			objetoQueEstaSendoSegurado.transform.parent = null;
-			objetoQueEstaSendoSegurado.enabled  = true;
-			objetoQueEstaSendoSegurado = null;
+			
+			objetoQueEstaSendoSegurado.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionY;
+			
+			//getObjectPosInicial();  
+			
+			
+			
+			
 			estaSegurandoUmObjeto = false;
-			animat.SetBool("com_objeto",false); 
+			animat.SetBool("com_objeto",false);
+			
 		}
 	}
 	
@@ -50,16 +69,21 @@ function interagirComOMouseEmObjetos(){
 	var colisor : RaycastHit;
 	if(Physics.Raycast(raio,colisor,1000)){ 
 		if(colisor.collider.tag == "ObjetoPonto"){
-			if(colisor.distance < 200){ 
-				objetoQueEstaSendoSegurado = colisor.collider;
-				objetoQueEstaSendoSegurado.transform.parent = transform;
+		if(colisor.distance < 200){ 
 				estaSegurandoUmObjeto = true;
-				animat.SetBool("com_objeto",true); 
+				objetoQueEstaSendoSegurado = colisor.collider;
+				objetoQueEstaSendoSegurado.collider.enabled = false;
+				objetoQueEstaSendoSegurado.transform.parent = transform;
+				setObjectPosInicial();
+				objetoQueEstaSendoSegurado.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 				objetoQueEstaSendoSegurado.transform.position.y = GameObject.Find("mao_do_boneco").transform.position.y;
 				objetoQueEstaSendoSegurado.transform.position.x = GameObject.Find("mao_do_boneco").transform.position.x;
 				objetoQueEstaSendoSegurado.transform.position.z = GameObject.Find("mao_do_boneco").transform.position.z;
-				objetoQueEstaSendoSegurado.enabled = false;
-				objetoQueEstaSendoSegurado.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+				objetoQueEstaSendoSegurado.transform.Translate(0,0,0);
+				objetoQueEstaSendoSegurado.transform.Rotate(0,0,0);
+				
+				
+				animat.SetBool("com_objeto",true); 
 				return true;
 			} 
 		}else if(colisor.collider.tag == "uma_porta"){

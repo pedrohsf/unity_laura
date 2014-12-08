@@ -50,6 +50,7 @@
      <Compile Include="Assets\PROJETO\Scripts\ControlaLife.js" />
      <Compile Include="Assets\PROJETO\Scripts\Correr.js" />
      <Compile Include="Assets\PROJETO\Scripts\Menu principal.js" />
+     <Compile Include="Assets\PROJETO\Scripts\caixa_collider_reconize.js" />
      <Compile Include="Assets\PROJETO\Scripts\casa_porta.js" />
      <Compile Include="Assets\PROJETO\Scripts\fimFase2.js" />
      <Compile Include="Assets\PROJETO\Scripts\geral.js" />

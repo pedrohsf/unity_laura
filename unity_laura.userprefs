@@ -1,19 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PROJETO\Scripts\ControlaLife.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PROJETO\Scripts\caixa_collider_reconize.js">
     <Files>
-      <File FileName="Assets\PROJETO\Scripts\casa_porta.js" Line="29" Column="20" />
-      <File FileName="Assets\PROJETO\Scripts\geral.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\Correr.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\fimFase2.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\Menu principal.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\menu.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\mensagem.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\mensageMesa.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\messagemEscada.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\messageLab.js" Line="1" Column="1" />
-      <File FileName="Assets\PROJETO\Scripts\messagePergunta.js" Line="42" Column="30" />
-      <File FileName="Assets\PROJETO\Scripts\ControlaLife.js" Line="69" Column="1" />
+      <File FileName="Assets\PROJETO\Scripts\caixa_collider_reconize.js" Line="39" Column="61" />
+      <File FileName="Assets\PROJETO\Scripts\casa_porta.js" Line="50" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

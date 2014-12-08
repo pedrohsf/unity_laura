@@ -14,14 +14,29 @@ var entro : boolean = false;
 
 
 function Update () {
+	
+	
+
+}
 
 
+function OnCollisionExit(collisionInfo : Collision) {
+	if(collisionInfo.collider.name == "BonecoPronto")
+		entro = false;
+}
 
-}function OnGUI() {
+function OnCollisionEnter(collision : Collision) {
+	if(collision.collider.name == "BonecoPronto")
+		entro = true;
+	
+}
+
+
+function OnGUI() {
 
 	if(entro){
 
-		GUI.Label(Rect(Screen.width/2-100,50,300,30),mensaje);
+		GUI.Label(Rect(Screen.width/2-100,50,400,30),mensaje);
 	
 	}
 
