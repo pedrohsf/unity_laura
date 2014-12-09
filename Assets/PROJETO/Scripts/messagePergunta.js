@@ -26,7 +26,24 @@ function Update () {
 	}
 
 
-}function OnTriggerEnter() {
+}
+
+function OnCollisionExit(collisionInfo : Collision) {
+	
+		if(collisionInfo.collider.name == "BonecoPronto") 
+			entro = false;
+	
+}
+
+function OnCollisionEnter(collision : Collision) {
+	
+		if(collision.collider.name == "BonecoPronto")
+			entro = true;
+	
+	
+}
+
+function OnTriggerEnter() {
 
 	entro = true;
 

@@ -8,6 +8,8 @@ var posInicial : Vector3;
 var rotInicial : Vector3;
 static var animat : Animator;
 
+
+
 var resposta_correta : AudioClip;
 var resposta_incorreta : AudioClip;
 
@@ -16,7 +18,9 @@ function Start () {
 }
 
 function Update () {
+	
 
+	
 } 
 
 
@@ -27,20 +31,25 @@ function OnCollisionEnter(collision : Collision) {
 		rotInicial = casa_porta.rotInicial;
 		
 		if("caixa"+collision.collider.name == name){
+			 
+			//collision.collider.name = objetoQueEstaSendoSegurado.name+"_done"; 
 			
 			collision.collider.transform.parent = transform;
-			
-			
-			//getObjectPosInicial();  
-			
+			 
+			 
+			objetoQueEstaSendoSegurado.collider.enabled = false;
 			objetoQueEstaSendoSegurado.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 			objetoQueEstaSendoSegurado.tag = "ja_na_caixa";
 			
 			GetComponent("AudioSource").audio.clip = resposta_correta;
-			audio.PlayOneShot(resposta_correta);
+			audio.PlayOneShot(resposta_correta);  
 			
-			 
+			if(objetoQueEstaSendoSegurado.name == "Ladder"){
+				Application.LoadLevel("FASE 2");
+			}
 			
+			
+		
 		}else{
 			GetComponent("AudioSource").audio.clip = resposta_incorreta;
 			audio.PlayOneShot(resposta_incorreta);

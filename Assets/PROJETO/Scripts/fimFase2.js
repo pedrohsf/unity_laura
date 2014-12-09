@@ -9,11 +9,10 @@ function Update ()
 {
 
 }
-/*function OnCollisionEnter(collision: Collision)
+function OnCollisionEnter(collision: Collision)
    {
    		if(collision.transform.tag=="Player") //tag do boneco e player
-   		{
-   		Application.loadedLevel("menu");
+   		{ 
+   			Application.LoadLevel("fim_do_game");
    		}
    	}
-*/

@@ -1,4 +1,4 @@
-﻿/*#pragma strict
+﻿#pragma strict
 
 var posiX: float;
 var posiY: float;
@@ -6,7 +6,8 @@ var posiY: float;
 var altura: float;
 var largura: float;
 
-var perSkin : GUISkin;
+var posEditadoX : float;
+var posEditadoY : float;
 
 function Start () {
 altura  = 50;
@@ -21,12 +22,25 @@ function Update () {
 }
 
 function OnGUI()
-{
-GUI.skin = perSkin;
-if (GUI.Button(Rect(posiX,posiY,largura,altura),"Jogar"))
-{
-  Application.LoadLevel("FASE 1");
-}
+{  
+
+
+
+
+	if (GUI.Button(Rect(posiX+posEditadoX,posiY+posEditadoY,largura,altura),"Jogar"))
+	{
+	  Application.LoadLevel("FASE 1");
+	  
+	  if (GUI.Button(Rect(posiX+posEditadoX,posiY+posEditadoY,largura,altura),"Como jogar"))
+	{
+	  Application.LoadLevel("Como jogar1");
+	}
+	
+	}
+	
+	if (GUI.Button(Rect(posiX-posEditadoX,posiY+posEditadoY,largura,altura),"Sair"))
+	{
+	  Application.Quit();
+	}
 
 }
-*/

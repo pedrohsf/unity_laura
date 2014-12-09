@@ -10,7 +10,7 @@ static var objetoQueEstaSendoSegurado : Collider;
 /* vars de posiçao inicial dos objetos pegos */
 static var posInicial : Vector3;
 static var rotInicial : Vector3;
-
+var audio_porta : AudioClip;
 /* vars animate para o pegando objeto */
 static var animat : Animator;
 var animacao : int;
@@ -23,7 +23,7 @@ function setObjectPosInicial(){
 
 
 function Start () {
-	casa_interacao.SetBool("porta_fechada",false);
+	
 	estaSegurandoUmObjeto = false;
 	objetoQueEstaSendoSegurado = null;
 	animat = GetComponent("Animator");
@@ -58,6 +58,12 @@ function Update () {
 			animat.SetBool("com_objeto",false);
 			
 		}
+	}
+	 
+	if(estaSegurandoUmObjeto){
+		objetoQueEstaSendoSegurado.transform.position.y = GameObject.Find("mao_do_boneco").transform.position.y;
+		objetoQueEstaSendoSegurado.transform.position.x = GameObject.Find("mao_do_boneco").transform.position.x;
+		objetoQueEstaSendoSegurado.transform.position.z = GameObject.Find("mao_do_boneco").transform.position.z;
 	}
 	
 	
@@ -99,10 +105,14 @@ function interagirComOMouseEmObjetos(){
 
 function interacao_com_a_porta(){
 	
-		if(casa_interacao.GetBool("porta_fechada"))
+		if(casa_interacao.GetBool("porta_fechada")){
 			casa_interacao.SetBool("porta_fechada",false);
-		else
+		}
+		else{
 			casa_interacao.SetBool("porta_fechada",true);
+			
+		}
+		audio.PlayOneShot(audio_porta);
 }
 
 

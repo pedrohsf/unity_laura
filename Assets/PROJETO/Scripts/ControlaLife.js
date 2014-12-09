@@ -10,59 +10,67 @@ var Lar:  float;
 var QntVida:float;
 var MaxQntVida: float;
 
+var animat: Animator; 
+var ratoAtual : GameObject;
+
+
 var tempo: float;
 
+var ratoColidido : boolean;
+
 function Start () {
-QntVida=100;
-MaxQntVida=100;
+	QntVida=100;
+	MaxQntVida=100;
+	ratoColidido = false;
+	animat = GetComponent("Animator");
 }
 
 function Update () {
 
-Lar  = Screen.width/4 * (QntVida/MaxQntVida); 
-posX = Screen.width/2 - Lar/2;
-posY = Screen.height/2 - Screen.height/4;
-Alt  = Screen.height/10;
+	Lar  = Screen.width/4 * (QntVida/MaxQntVida); 
+	posX = 20;
+	posY = 20;
+	Alt  = Screen.height/10;
 
+	
+	if(ratoColidido){
+		if(Input.GetMouseButton(0)){
+			animat.SetBool("chutando",true);  
+			GameObject.Destroy(ratoAtual);
+		}else{
+			animat.SetBool("chutando",false); 
+		}
+	}
 
-if (Input.GetKey("c"))
-{
-  if (QntVida>0)
-  {
-   QntVida = QntVida-0.5;
-   tempo = -1;
-  }
+	if(QntVida< 0){
+		Application.LoadLevel("game_over");
+	}
+	
+
+	tempo=tempo+Time.deltaTime;
 }
 
-if (tempo>=0)
-{
- if (QntVida<100)
- {
-   if (tempo>0.5)
-   {
-   QntVida = QntVida+0.5;
-   tempo = 0;
-   }
- }
-
-
-
+function OnGUI(){
+	GUI.skin = texButton;
+	GUI.Button(Rect(posX,posY,Lar,Alt)," ");
 }
 
-
-tempo=tempo+Time.deltaTime;
+function OnCollisionEnter(collision : Collision){ 
+	 	Debug.Log(collision.collider.name);
+		
+		if(collision.collider.name == "rato"){  
+			ratoColidido = true; 
+			QntVida = QntVida - 5; 
+			ratoAtual = collision.collider.gameObject;
+		}
+	 
 }
 
-function OnGUI()
-{
-GUI.skin = texButton;
-
-GUI.Button(Rect(posX,posY,Lar,Alt)," ");
-
-
-
+function OnCollisionExit(collision : Collision){
+	
+	if(collision.collider.name == "rato"){    
+		ratoColidido = false;
+  		animat.SetBool("chutando",false); 
+  	}
 }
-
-
-
 

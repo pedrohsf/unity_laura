@@ -67,8 +67,9 @@ ModelImporter:
     3300000: B_zier_-_Curva
     4300000: B_zier_-_Curva
     4300002: Cube
-    7400000: Default Take
+    7400000: andando
     7400002: Arma__oAction
+    7400004: parado
     9500000: //RootNode
     13700000: Cube
   materials:
@@ -86,7 +87,179 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: andando
+      takeName: Default Take
+      firstFrame: 1
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arma__o
+        weight: 1
+      - path: Arma__o/rabo
+        weight: 1
+      - path: Arma__o/rabo/SPlinerabo
+        weight: 1
+      - path: Arma__o/traseiro
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L/coxa_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L/coxa_L/antepata_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L/coxa_L/antepata_L/Pata_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R/coxa_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R/coxa_L_001_R/antepata_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R/coxa_L_001_R/antepata_L_001_R/Pata_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L/braco_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L/braco_L/Antebraco_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L/braco_L/Antebraco_L/Mao_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R/braco_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R/braco_L_001_R/Antebraco_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R/braco_L_001_R/Antebraco_L_001_R/Mao_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/orelha_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/orelha_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/pescoco
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/pescoco/Cabeca
+        weight: 1
+      - path: B_zier_-_Curva
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Vazio
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: parado
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: .100000009
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arma__o
+        weight: 1
+      - path: Arma__o/rabo
+        weight: 1
+      - path: Arma__o/rabo/SPlinerabo
+        weight: 1
+      - path: Arma__o/traseiro
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L/coxa_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L/coxa_L/antepata_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L/coxa_L/antepata_L/Pata_L
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R/coxa_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R/coxa_L_001_R/antepata_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/Pelvis_L_001_R/coxa_L_001_R/antepata_L_001_R/Pata_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L/braco_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L/braco_L/Antebraco_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L/braco_L/Antebraco_L/Mao_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R/braco_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R/braco_L_001_R/Antebraco_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/dorsal_L_001_R/braco_L_001_R/Antebraco_L_001_R/Mao_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/orelha_L
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/orelha_L_001_R
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/pescoco
+        weight: 1
+      - path: Arma__o/traseiro/tronco/torax/pescoco/Cabeca
+        weight: 1
+      - path: B_zier_-_Curva
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Vazio
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
